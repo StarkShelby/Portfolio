@@ -145,3 +145,30 @@ body {
   filter: blur(0%);
   z-index: 0;
 }
+
+@media (min-width: 640px) {
+  .mobile-glow {
+    display: none;
+  }
+}
+
+.mobile-glow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 750px;
+  border-radius: 40%;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.4), transparent);
+  filter: blur(60px);
+  z-index: 0;
+  opacity: 70%;
+}
+
+.left-glow {
+  left: -75px;
+}
+
+.right-glow {
+  right: -75px;
+}
