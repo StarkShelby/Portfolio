@@ -28,6 +28,11 @@ html {
     transform: translateY(0px);
   }
 }
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .floating-element {
   animation: floatY 4s ease-in-out infinite;
