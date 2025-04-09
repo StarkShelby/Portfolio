@@ -24,7 +24,10 @@
 
   <body class="bg-black text-white font-sans">
     <!-- Neon Cursor -->
-    <div id="custom-cursor"></div>
+    <div
+      id="custom-cursor"
+      class="hidden lg:block fixed w-6 h-6 bg-purple-500 rounded-full pointer-events-none z-[9999]"
+    ></div>
     <style>
       body {
         margin: 0;
@@ -63,7 +66,7 @@
         color: white !important;
         background-clip: initial !important;
       }
-      @media (max-width: 640px) {
+      @media (max-width: 768px) {
         .hero-section {
           min-height: 65vh;
         }
@@ -101,7 +104,7 @@
           class="bg-gray-800 text-white px-4 py-3 rounded-xl shadow-lg border border-purple-500"
         >
           <p class="text-sm">❤️ Total Likes</p>
-          <h3 class="text-xl font-bold text-purple-400">63,000</h3>
+          <h3 class="text-xl font-bold text-purple-400">300k</h3>
         </div>
       </div>
 
@@ -166,29 +169,79 @@
 
       <!-- Mobile Navbar Wrapper -->
       <div class="sm:hidden fixed top-4 right-4 z-50">
-        <!-- Hamburger / Close Button -->
-        <button id="menuToggle" class="text-white text-3xl focus:outline-none">
+        <!-- Toggle Button -->
+        <button
+          id="menuToggle"
+          class="text-purple-500 text-3xl focus:outline-none shadow-lg p-2 rounded-md bg-black/70 border border-purple-500 hover:shadow-[0_0_10px_rgba(168,85,247,0.8)] transition-all duration-300"
+        >
           &#9776;
-          <!-- Hamburger Icon -->
         </button>
 
-        <!-- Mobile Menu (Hidden by default) -->
+        <!-- Dropdown Menu -->
         <div
           id="mobileMenu"
-          class="hidden flex-col gap-4 absolute right-0 top-12 bg-black px-6 py-4 rounded-md shadow-lg border border-gray-700"
+          class="sm:hidden flex flex-col gap-4 absolute right-0 top-12 w-52 bg-black/90 px-6 py-5 rounded-xl shadow-lg border border-purple-600 backdrop-blur-md animate-fade-in transition-all duration-500"
         >
-          <a href="#about" class="text-white hover:text-purple-400">About</a>
-          <a href="#customer" class="text-white hover:text-purple-400"
+          <a
+            href="#about"
+            class="text-white neon-link transition-all duration-300"
+            >About</a
+          >
+          <a
+            href="#customer"
+            class="text-white neon-link transition-all duration-300"
             >Feedbacks</a
           >
-          <a href="#feature" class="text-white hover:text-purple-400"
+          <a
+            href="#feature"
+            class="text-white neon-link transition-all duration-300"
             >Services</a
           >
-          <a href="#Contact" class="text-white hover:text-purple-400"
+          <a
+            href="#Contact"
+            class="text-white neon-link transition-all duration-300"
             >Contact</a
           >
         </div>
       </div>
+
+      <style>
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: scale(0.9) translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+          }
+        }
+
+        .animate-fade-in {
+          animation: fade-in 0.3s ease-out;
+        }
+        .neon-link {
+          position: relative;
+          color: #fff;
+          text-shadow: 0 0 5px #a855f7, 0 0 10px #a855f7, 0 0 20px #a855f7,
+            0 0 40px #9333ea;
+        }
+
+        .neon-link:active {
+          animation: neon-tap 0.3s ease;
+        }
+
+        @keyframes neon-tap {
+          0% {
+            text-shadow: 0 0 10px #c084fc, 0 0 20px #c084fc, 0 0 30px #c084fc,
+              0 0 50px #a855f7;
+          }
+          100% {
+            text-shadow: 0 0 5px #a855f7, 0 0 10px #a855f7, 0 0 20px #a855f7,
+              0 0 40px #9333ea;
+          }
+        }
+      </style>
 
       <!-- CTA Button -->
       <a
@@ -998,7 +1051,7 @@
 
     <section
       id="customer"
-      class="min-h-screen py-28 bg-gradient-to-b text-white gradient-bg"
+      class="bg-gradient-to-b from-black via-purple-800 to-black min-h-screen sm:min-h-[100vh] w-full overflow-hidden"
     >
       <div class="text-center max-w-4xl mx-auto px-6">
         <h3 class="font-sans text-4xl text-purple-400 uppercase mb-3">
@@ -1100,7 +1153,7 @@
 
     <section>
       <div
-        class="counter-section min-h-10 bg-gradient-to-b text-white gradient-bg py-12 md:py-20"
+        class="bg-gradient-to-b from-black via-purple-800 to-black min-h-screen sm:min-h-[100vh] w-full overflow-hidden"
       >
         <div
           class="flex flex-col md:flex-row items-center justify-center gap-12"
@@ -1109,7 +1162,7 @@
           <div class="counter-box text-center px-4">
             <h2
               class="text-6xl font-serif text-white counter"
-              data-target="7876"
+              data-target="500"
             >
               0
             </h2>
@@ -1123,7 +1176,7 @@
 
           <!-- Counter Box 2 -->
           <div class="counter-box text-center px-4">
-            <h2 class="text-6xl font-serif text-white counter" data-target="30">
+            <h2 class="text-6xl font-serif text-white counter" data-target="7">
               0
             </h2>
             <p class="text-gray-400 mt-2">Million+ Views</p>
@@ -1138,7 +1191,7 @@
           <div class="counter-box text-center px-4">
             <h2
               class="text-6xl font-serif text-white counter"
-              data-target="364157"
+              data-target="17415"
             >
               0
             </h2>
@@ -1366,6 +1419,7 @@
         once: false,
       });
     </script>
+
     <script>
       const cursor = document.querySelector("#custom-cursor");
 
@@ -1374,6 +1428,7 @@
         cursor.style.left = `${e.pageX}px`;
         cursor.style.top = `${e.pageY}px`;
       });
+
       let x = 0,
         y = 0;
       let targetX = 0,
@@ -1412,7 +1467,6 @@
     <!-- script for mobile navbar -->
     <script>
       const menuToggle = document.getElementById("menuToggle");
-      const menuIcon = document.getElementById("menuIcon");
       const mobileMenu = document.getElementById("mobileMenu");
 
       menuToggle.addEventListener("click", () => {
@@ -1420,12 +1474,25 @@
 
         // Toggle icon between hamburger and X
         if (mobileMenu.classList.contains("hidden")) {
-          menuIcon.innerHTML = "&#9776;"; // ☰
+          menuToggle.innerHTML = "&#9776;"; // ☰
         } else {
-          menuIcon.innerHTML = "&times;"; // ✖
+          menuToggle.innerHTML = "&times;"; // ✖
         }
       });
     </script>
+    <!-- autoclose munu on tapping outside -->
+    <script>
+      document.addEventListener("click", (e) => {
+        const toggleBtn = document.getElementById("menuToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        if (!toggleBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+          mobileMenu.classList.add("hidden");
+          menuToggle.innerHTML = "&#9776;";
+        }
+      });
+    </script>
+
     <!-- script for seekbar,play/pause button -->
     <script>
       window.addEventListener("DOMContentLoaded", () => {

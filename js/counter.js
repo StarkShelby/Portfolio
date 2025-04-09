@@ -11,7 +11,7 @@ const startCounting = (counter) => {
       let current = +counter.innerText;
       if (current < target) {
         counter.innerText = current + increment;
-        setTimeout(updateCount, 20);
+        setTimeout(updateCount, 50);
       } else {
         counter.innerText = target.toLocaleString();
       }
