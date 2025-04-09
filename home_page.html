@@ -68,6 +68,14 @@
           min-height: 65vh;
         }
       }
+
+      .video-slider::-webkit-slider-thumb {
+        background-color: #9333ea; /* purple-600 */
+        border-radius: 9999px;
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+      }
     </style>
     <!-- Hero Section -->
     <section class="hero-section">
@@ -311,12 +319,45 @@
         >
           <div class="relative w-full max-w-md mx-auto video-card">
             <video
-              class="rounded-xl w-full"
+              class="video-element rounded-xl w-full"
               src="./assets/Saraswati River Mystery.mp4"
               muted
               autoplay
               loop
             ></video>
+            <!-- Play/Pause button - centered -->
+
+            <!-- Centered Play/Pause Button -->
+            <button
+              class="play-pause-btn absolute inset-0 flex items-center justify-center opacity-20 hover:opacity-40 transition-opacity"
+              aria-label="Play/Pause"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-16 h-16 text-white icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <!-- Play icon -->
+                <path class="play-icon" d="M8 5v14l11-7z" />
+                <!-- Pause icon -->
+                <g class="pause-icon hidden">
+                  <path d="M10 9v6" />
+                  <path d="M14 9v6" />
+                </g>
+              </svg>
+            </button>
+
+            <!-- Seekbar -->
+            <input
+              type="range"
+              class="seekbar absolute bottom-4 left-4 right-4 w-[90%] h-1 bg-gray-700 rounded"
+              min="0"
+              value="0"
+              step="0.1"
+            />
 
             <button
               class="volume-toggle absolute top-4 right-4 text-white p-2 rounded-full shadow-lg"
@@ -345,12 +386,43 @@
         >
           <div class="relative w-full max-w-md mx-auto video-card">
             <video
-              class="rounded-xl w-full"
+              class="video-element rounded-xl w-full"
               src="./assets/Bhav-2(1).mp4"
               muted
               autoplay
               loop
             ></video>
+            <!-- Centered Play/Pause Button -->
+            <button
+              class="play-pause-btn absolute inset-0 flex items-center justify-center opacity-20 hover:opacity-40 transition-opacity"
+              aria-label="Play/Pause"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-16 h-16 text-white icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <!-- Play icon -->
+                <path class="play-icon" d="M8 5v14l11-7z" />
+                <!-- Pause icon -->
+                <g class="pause-icon hidden">
+                  <path d="M10 9v6" />
+                  <path d="M14 9v6" />
+                </g>
+              </svg>
+            </button>
+
+            <!-- Seekbar -->
+            <input
+              type="range"
+              class="seekbar absolute bottom-4 left-4 right-4 w-[90%] h-1 bg-gray-700 rounded"
+              min="0"
+              value="0"
+              step="0.1"
+            />
 
             <button
               class="volume-toggle absolute top-4 right-4 text-white p-2 rounded-full shadow-lg"
@@ -379,12 +451,43 @@
         >
           <div class="relative w-full max-w-md mx-auto video-card">
             <video
-              class="rounded-xl w-full"
+              class="video-element rounded-xl w-full"
               src="./assets/Sequence 35 Prob3 - Copy.mp4"
               muted
               autoplay
               loop
             ></video>
+            <!-- Centered Play/Pause Button -->
+            <button
+              class="play-pause-btn absolute inset-0 flex items-center justify-center opacity-20 hover:opacity-40 transition-opacity"
+              aria-label="Play/Pause"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-16 h-16 text-white icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <!-- Play icon -->
+                <path class="play-icon" d="M8 5v14l11-7z" />
+                <!-- Pause icon -->
+                <g class="pause-icon hidden">
+                  <path d="M10 9v6" />
+                  <path d="M14 9v6" />
+                </g>
+              </svg>
+            </button>
+
+            <!-- Seekbar -->
+            <input
+              type="range"
+              class="seekbar absolute bottom-4 left-4 right-4 w-[90%] h-1 bg-gray-700 rounded"
+              min="0"
+              value="0"
+              step="0.1"
+            />
 
             <button
               class="volume-toggle absolute top-4 right-4 text-white p-2 rounded-full shadow-lg"
@@ -413,12 +516,43 @@
         >
           <div class="relative w-full max-w-md mx-auto video-card">
             <video
-              class="rounded-xl w-full"
+              class="video-element rounded-xl w-full"
               src="./assets/Be10x.1 2.mp4"
               muted
               autoplay
               loop
             ></video>
+            <!-- Centered Play/Pause Button -->
+            <button
+              class="play-pause-btn absolute inset-0 flex items-center justify-center opacity-20 hover:opacity-40 transition-opacity"
+              aria-label="Play/Pause"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-16 h-16 text-white icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <!-- Play icon -->
+                <path class="play-icon" d="M8 5v14l11-7z" />
+                <!-- Pause icon -->
+                <g class="pause-icon hidden">
+                  <path d="M10 9v6" />
+                  <path d="M14 9v6" />
+                </g>
+              </svg>
+            </button>
+
+            <!-- Seekbar -->
+            <input
+              type="range"
+              class="seekbar absolute bottom-4 left-4 right-4 w-[90%] h-1 bg-gray-700 rounded"
+              min="0"
+              value="0"
+              step="0.1"
+            />
 
             <button
               class="volume-toggle absolute top-4 right-4 text-white p-2 rounded-full shadow-lg"
@@ -447,12 +581,43 @@
         >
           <div class="relative w-full max-w-md mx-auto video-card">
             <video
-              class="rounded-xl w-full"
+              class="video-element rounded-xl w-full"
               src="./assets/Trading.mp4"
               muted
               autoplay
               loop
             ></video>
+            <!-- Centered Play/Pause Button -->
+            <button
+              class="play-pause-btn absolute inset-0 flex items-center justify-center opacity-20 hover:opacity-40 transition-opacity"
+              aria-label="Play/Pause"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-16 h-16 text-white icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <!-- Play icon -->
+                <path class="play-icon" d="M8 5v14l11-7z" />
+                <!-- Pause icon -->
+                <g class="pause-icon hidden">
+                  <path d="M10 9v6" />
+                  <path d="M14 9v6" />
+                </g>
+              </svg>
+            </button>
+
+            <!-- Seekbar -->
+            <input
+              type="range"
+              class="seekbar absolute bottom-4 left-4 right-4 w-[90%] h-1 bg-gray-700 rounded"
+              min="0"
+              value="0"
+              step="0.1"
+            />
 
             <button
               class="volume-toggle absolute top-4 right-4 text-white p-2 rounded-full shadow-lg"
@@ -481,12 +646,43 @@
         >
           <div class="relative w-full max-w-md mx-auto video-card">
             <video
-              class="rounded-xl w-full"
+              class="video-element rounded-xl w-full"
               src="./assets/Orange Labs Edit 02.mp4"
               muted
               autoplay
               loop
             ></video>
+            <!-- Centered Play/Pause Button -->
+            <button
+              class="play-pause-btn absolute inset-0 flex items-center justify-center opacity-20 hover:opacity-40 transition-opacity"
+              aria-label="Play/Pause"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-16 h-16 text-white icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <!-- Play icon -->
+                <path class="play-icon" d="M8 5v14l11-7z" />
+                <!-- Pause icon -->
+                <g class="pause-icon hidden">
+                  <path d="M10 9v6" />
+                  <path d="M14 9v6" />
+                </g>
+              </svg>
+            </button>
+
+            <!-- Seekbar -->
+            <input
+              type="range"
+              class="seekbar absolute bottom-4 left-4 right-4 w-[90%] h-1 bg-gray-700 rounded"
+              min="0"
+              value="0"
+              step="0.1"
+            />
 
             <button
               class="volume-toggle absolute top-4 right-4 text-white p-2 rounded-full shadow-lg"
@@ -515,12 +711,43 @@
         >
           <div class="relative w-full max-w-md mx-auto video-card">
             <video
-              class="rounded-xl w-full"
+              class="video-element rounded-xl w-full"
               src="./assets/Video 1.mp4"
               muted
               autoplay
               loop
             ></video>
+            <!-- Centered Play/Pause Button -->
+            <button
+              class="play-pause-btn absolute inset-0 flex items-center justify-center opacity-20 hover:opacity-40 transition-opacity"
+              aria-label="Play/Pause"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-16 h-16 text-white icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <!-- Play icon -->
+                <path class="play-icon" d="M8 5v14l11-7z" />
+                <!-- Pause icon -->
+                <g class="pause-icon hidden">
+                  <path d="M10 9v6" />
+                  <path d="M14 9v6" />
+                </g>
+              </svg>
+            </button>
+
+            <!-- Seekbar -->
+            <input
+              type="range"
+              class="seekbar absolute bottom-4 left-4 right-4 w-[90%] h-1 bg-gray-700 rounded"
+              min="0"
+              value="0"
+              step="0.1"
+            />
 
             <button
               class="volume-toggle absolute top-4 right-4 text-white p-2 rounded-full shadow-lg"
@@ -549,12 +776,43 @@
         >
           <div class="relative w-full max-w-md mx-auto video-card">
             <video
-              class="rounded-xl w-full"
+              class="video-element rounded-xl w-full"
               src="./assets/0310(3).mp4"
               muted
               autoplay
               loop
             ></video>
+            <!-- Centered Play/Pause Button -->
+            <button
+              class="play-pause-btn absolute inset-0 flex items-center justify-center opacity-20 hover:opacity-40 transition-opacity"
+              aria-label="Play/Pause"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-16 h-16 text-white icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <!-- Play icon -->
+                <path class="play-icon" d="M8 5v14l11-7z" />
+                <!-- Pause icon -->
+                <g class="pause-icon hidden">
+                  <path d="M10 9v6" />
+                  <path d="M14 9v6" />
+                </g>
+              </svg>
+            </button>
+
+            <!-- Seekbar -->
+            <input
+              type="range"
+              class="seekbar absolute bottom-4 left-4 right-4 w-[90%] h-1 bg-gray-700 rounded"
+              min="0"
+              value="0"
+              step="0.1"
+            />
 
             <button
               class="volume-toggle absolute top-4 right-4 text-white p-2 rounded-full shadow-lg"
@@ -583,12 +841,43 @@
         >
           <div class="relative w-full max-w-md mx-auto video-card">
             <video
-              class="rounded-xl w-full"
+              class="video-element rounded-xl w-full"
               src="./assets/Video 2.mp4"
               muted
               autoplay
               loop
             ></video>
+            <!-- Centered Play/Pause Button -->
+            <button
+              class="play-pause-btn absolute inset-0 flex items-center justify-center opacity-20 hover:opacity-40 transition-opacity"
+              aria-label="Play/Pause"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-16 h-16 text-white icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <!-- Play icon -->
+                <path class="play-icon" d="M8 5v14l11-7z" />
+                <!-- Pause icon -->
+                <g class="pause-icon hidden">
+                  <path d="M10 9v6" />
+                  <path d="M14 9v6" />
+                </g>
+              </svg>
+            </button>
+
+            <!-- Seekbar -->
+            <input
+              type="range"
+              class="seekbar absolute bottom-4 left-4 right-4 w-[90%] h-1 bg-gray-700 rounded"
+              min="0"
+              value="0"
+              step="0.1"
+            />
 
             <button
               class="volume-toggle absolute top-4 right-4 text-white p-2 rounded-full shadow-lg"
@@ -725,48 +1014,71 @@
         class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6 text-white text-center"
       >
         <!-- Testimonial 1 -->
-        <div class="opacity-70 transform scale-95 transition-all duration-300">
-          <p class="text-gray-300 text-base mb-6">
-            The quality of work and delivery time are unmatched. They helped me
-            build a one-of-a-kind brand presence.
+        <div
+          class="opacity-70 transform scale-95 transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-once="false"
+        >
+          <p class="text-gray-300 text-base mb-6 overflow-hidden">
+            "We collaborated with him for a series of Instagram and YouTube ad
+            edits for our skincare line. The videos came out beautifully —
+            crisp, elegant, and visually aligned with our brand tone. He really
+            understood our aesthetic and delivered on-point content every single
+            time."
           </p>
           <img
-            src="./assets/testi1.jpg"
+            src="./assets/download.png"
             class="w-20 h-20 rounded-full mx-auto mb-2"
             alt="Naftali Moses"
           />
-          <h4 class="text-lg font-semibold">Naftali Moses</h4>
-          <p class="text-sm text-gray-400">Relationship Coach</p>
+          <h4 class="text-lg font-semibold">Oriflame</h4>
+          <p class="text-sm text-gray-400">(Skincare)</p>
         </div>
 
         <!-- Testimonial 2 - Highlighted Center -->
-        <div class="transform scale-105 transition-all duration-300">
+        <div
+          class="transform scale-105 transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-once="false"
+        >
           <p class="text-gray-100 text-lg font-extralight mb-6">
-            Sahil has been transformative for my Instagram and YouTube. I
-            constantly get compliments on the editing.
+            "Incredible editing skills. I sent over a bunch of raw footage for a
+            brand video, and he turned it into something polished and
+            professional. Communication was smooth, and he was open to feedback.
+            One of the best freelance editors I’ve worked with."
           </p>
           <img
-            src="./assets/testi2.webp"
-            class="w-24 h-20 rounded-full mx-auto mb-2 border-4 border-purple-500"
+            src="./assets/testi2.jpeg"
+            class="w-20 h-20 rounded-full mx-auto mb-2"
             alt="Ronson Moses"
           />
-          <h4 class="text-xl font-bold text-purple-400">Ronson Moses</h4>
-          <p class="text-sm text-gray-400">Gym Owner</p>
+          <h4 class="text-xl font-bold">James Carter</h4>
+          <p class="text-sm text-gray-400">(Media Management)</p>
         </div>
 
         <!-- Testimonial 3 -->
-        <div class="opacity-70 transform scale-95 transition-all duration-300">
+        <div
+          class="opacity-70 transform scale-95 transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="800"
+          data-aos-once="false"
+        >
           <p class="text-gray-300 text-base font-thin mb-6">
-            Helped me find my style and delivered amazing content. Great
-            communication and quick revisions!
+            "We needed high-quality explainer videos for our health awareness
+            campaign, and his editing made a huge difference. The information
+            was presented clearly, with clean visuals and a professional finish.
+            Very responsive and committed to timelines. A reliable creative
+            partner."
           </p>
           <img
-            src="./assets/testi3.avif"
+            src="./assets/LOGO gap-01.png"
             class="w-20 h-20 rounded-full mx-auto mb-2"
             alt="Benjamin Goresky"
           />
-          <h4 class="text-lg font-semibold">Benjamin Goresky</h4>
-          <p class="text-sm text-gray-400">Men's Coach</p>
+          <h4 class="text-lg font-semibold">Orange Lab</h4>
+          <p class="text-sm text-gray-400">(Health)</p>
         </div>
       </div>
     </section>
@@ -863,7 +1175,9 @@
                     alt="Growth Icon"
                   />
                   <p class="text-purple-400 text-sm font-medium mb-1">Growth</p>
-                  <h3 class="text-xl font-semibold mb-2">Grow within Months</h3>
+                  <h3 class="text-base sm:text-xl font-semibold mb-2">
+                    Grow within Months
+                  </h3>
                   <p class="text-gray-400 text-sm overflow-hidden">
                     We help you increase your viewership count within a set
                     period.
@@ -1110,6 +1424,50 @@
         } else {
           menuIcon.innerHTML = "&times;"; // ✖
         }
+      });
+    </script>
+    <!-- script for seekbar,play/pause button -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".video-card").forEach((card) => {
+          const video = card.querySelector(".video-element");
+          const playPauseBtn = card.querySelector(".play-pause-btn");
+          const seekbar = card.querySelector(".seekbar");
+          const playIcon = card.querySelector(".play-icon");
+          const pauseIcon = card.querySelector(".pause-icon");
+
+          if (!video || !playPauseBtn || !seekbar) return; // just in case
+
+          // Reset video to beginning when it ends
+          video.addEventListener("ended", () => {
+            video.currentTime = 0;
+            video.play();
+          });
+
+          // Update seekbar while video plays
+          video.addEventListener("timeupdate", () => {
+            seekbar.max = video.duration;
+            seekbar.value = video.currentTime;
+          });
+
+          // Seek when user changes slider
+          seekbar.addEventListener("input", () => {
+            video.currentTime = seekbar.value;
+          });
+
+          // Toggle play/pause
+          playPauseBtn.addEventListener("click", () => {
+            if (video.paused) {
+              video.play();
+              playIcon.classList.add("hidden");
+              pauseIcon.classList.remove("hidden");
+            } else {
+              video.pause();
+              playIcon.classList.remove("hidden");
+              pauseIcon.classList.add("hidden");
+            }
+          });
+        });
       });
     </script>
 
